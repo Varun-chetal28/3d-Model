@@ -1,0 +1,239 @@
+$color_1: lightgray;
+$color_2: pink;
+$color_3: lightblue;
+$color_4: black;
+$color_5: white;
+$font-family_1: "Source Sans Pro", sans-serif;
+$font-family_2: 'Varela', sans-serif;
+$font-family_3: "Source Sans Pro light";
+$background-color_1: white;
+$background-color_2: black;
+
+@import "https://fonts.googleapis.com/css2?family=Varela&display=swap";
+body {
+	font-family: $font-family_1;
+}
+.main__video {
+	video {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+		object-position: center bottom;
+	}
+}
+.first__heading {
+	position: absolute;
+	top: 50rem;
+	left: 2rem;
+	display: flex;
+	flex-direction: column;
+	h1 {
+		text-align: center;
+		font-size: 1.9375em;
+		color: $color_1;
+		font-family: $font-family_2;
+	}
+}
+.first__para {
+	width: 100%;
+	position: absolute;
+	top: 80rem;
+	display: flex;
+	justify-content: space-between;
+	span {
+		display: inline-block;
+		text-transform: uppercase;
+		font-weight: 600;
+		padding: 2rem;
+		font-size: 3.5em;
+	}
+}
+.pink__clr {
+	color: $color_2;
+}
+.blue__clr {
+	color: $color_3;
+}
+.second__section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: $background-color_1;
+	overflow: hidden;
+}
+.second__heading {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: $background-color_1;
+	overflow: hidden;
+}
+.second__heading1 {
+	p {
+		width: 90%;
+		display: inline-block;
+		font-size: 3em;
+		font-weight: 600;
+		text-transform: capitalize;
+	}
+}
+.second__heading2 {
+	p {
+		align-self: flex-end;
+		text-align: right;
+		width: 80%;
+		height: 50vh;
+		display: flex;
+		flex-direction: column;
+		font-size: 3em;
+		font-weight: 600;
+		justify-content: center;
+		align-items: flex-start;
+		color: $color_4;
+	}
+}
+.third__container {
+	width: 100vw;
+	height: 200vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: $background-color_2;
+	color: $color_5;
+	overflow: hidden;
+}
+.third__heading {
+	margin-left: 4rem;
+	font-size: 2.75em;
+}
+.third__info {
+	align-self: flex-end;
+	text-align: right;
+	margin-right: 4rem;
+	h3 {
+		font-size: 1.75em;
+		color: $color_5;
+	}
+	h5 {
+		color: $color_1;
+	}
+}
+.third__info_2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	width: 60%;
+	margin-left: 4rem;
+	div {
+		font-size: 2.75em;
+	}
+	p {
+		color: $color_1;
+		font-size: 1em;
+	}
+}
+.rotate__heading {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: rotate(-25deg);
+	h1 {
+		background-image: linear-gradient(#35c3f3 0%,#8b9fe8 20%,#e681d8 39%,#ffa9a4 76%,#fed2ce 100%);
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-top: 20px;
+		font-size: 4em;
+	}
+}
+.fourth__section {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	-webkit-box-pack: start;
+	justify-content: flex-start;
+	-webkit-box-align: center;
+	align-items: center;
+	background-color: $background-color_2;
+	overflow: hidden;
+}
+.fourth__heading {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 7em;
+	font-family: $font-family_3;
+	background-image: linear-gradient(#35c3f3 0%,#8b9fe8 20%,#e681d8 39%,#ffa9a4 76%,#fed2ce 100%);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.battery__img {
+	width: 25%;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.fourth__info {
+	position: absolute;
+	top: 30px;
+	font-size: 1em;
+	color: $color_1;
+	width: 30%;
+	height: 40vh;
+}
+.fifth__section {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: $background-color_1;
+	overflow: hidden;
+}
+.fifth__heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 7em;
+	text-transform: capitalize;
+	z-index: 5;
+}
+.img__sectionfifth {
+	position: absolute;
+	right: 5%;
+	top: 20%;
+}
+canvas {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
